@@ -203,8 +203,8 @@ summary {
 }
 
 body {
-    background-color: color-mix(in srgb, Canvas, CanvasText 2.5%);
-    color: color-mix(in srgb, CanvasText, Canvas 15%);
+    background-color: Canvas;
+    color: CanvasText;
     color-scheme: light dark;
 }
 
@@ -270,6 +270,7 @@ h6 {
 /* Start here !!!! */
 /*/*/
 
-.article :where(h1, h2, h3, h4, h5) {
-    all: revert;
+@font-face {
+    font-family: norse;
+    src: url(Norse-Bold.otf);
 }
