@@ -202,11 +202,11 @@ summary {
     display: list-item;
 }
 
-body {
+/* body {
     background-color: Canvas;
     color: CanvasText;
     color-scheme: light dark;
-}
+} */
 
 h1,
 h2,
@@ -273,4 +273,135 @@ h6 {
 @font-face {
     font-family: norse;
     src: url(Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+/*  */
+/* LEFT */
+/*  */
+
+.left {
+    background-image: url(halie-west.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100vh;
+
+    flex-shrink: 0;
+
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 30%);
+
+    position: relative;
+    top: 20%;
+}
+
+.logo-container span {
+    font-family: norse;
+    font-size: 3rem;
+}
+
+.credits {
+    align-self: center;
+
+    position: relative;
+    bottom: 5%;
+}
+
+.credits a {
+    color: inherit;
+}
+
+/*  */
+/* RIGHT */
+/*  */
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 30px;
+
+    background-color: #f9fafb;
+}
+
+.top {
+    padding: 20px 10%;
+}
+
+.form {
+    padding: 20px 10% 40px;
+    /* border: 1px solid CanvasText; */
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.1) ;
+
+    background-color: white;
+}
+
+form {
+    width: 800px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+button {
+    background-color: #596D48;
+    color: White;
+    border: none;
+    padding: 2px 30px;
+
+    width: 200px;
+    height: 40px;
+
+    border-radius: 10px;
+}
+
+.login a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form>div:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    height: 2em;
+    border-radius: 5px;
+}
+
+.bottom {
+    padding: 0 10%;
 }
