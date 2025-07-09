@@ -272,13 +272,14 @@ h6 {
 
 @font-face {
     font-family: norse;
-    src: url(Norse-Bold.otf);
+    src: url(assets/Norse-Bold.otf);
 }
 
 body {
     display: flex;
     flex-direction: row;
-    height: 100%;
+
+    height: 130vh;
 }
 
 /*  */
@@ -286,17 +287,14 @@ body {
 /*  */
 
 .left {
-    background-image: url(halie-west.jpg);
+    background-image: url(assets/halie-west.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
 
     width: 500px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    height: 100vh;
 
     flex-shrink: 0;
 
@@ -317,7 +315,7 @@ body {
 
 .logo-container span {
     font-family: norse;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .credits {
@@ -338,24 +336,33 @@ body {
 .right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
-    gap: 30px;
+    gap: 50px;
 
     background-color: #f9fafb;
 }
 
 .top {
-    padding: 20px 10%;
+    margin-top: 50px;
+    padding: 0px 20% 0px 10%;
+
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.top div:last-child {
+    margin-top: 1ch;
 }
 
 .form {
     padding: 20px 10% 40px;
     /* border: 1px solid CanvasText; */
-    box-shadow: 0 10px 10px rgb(0 0 0 / 0.1) ;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.1);
 
     background-color: white;
 }
+
+
 
 form {
     width: 800px;
@@ -365,6 +372,23 @@ form {
     flex-wrap: wrap;
 
     gap: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form>div:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    height: 2em;
+    border-radius: 5px;
 }
 
 button {
@@ -383,23 +407,6 @@ button {
     text-decoration: none;
     font-weight: bold;
     color: #596D48;
-}
-
-form div {
-    display: flex;
-    flex-direction: column;
-}
-
-.form>div:first-child {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-input {
-    border: 1px solid #E5E7EB;
-    height: 2em;
-    border-radius: 5px;
 }
 
 .bottom {
