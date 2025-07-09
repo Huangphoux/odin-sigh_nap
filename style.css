@@ -322,7 +322,7 @@ body {
     align-self: center;
 
     position: relative;
-    bottom: 5%;
+    bottom: 2%;
 }
 
 .credits a {
@@ -344,7 +344,7 @@ body {
 
 .top {
     margin-top: 50px;
-    padding: 0px 20% 0px 10%;
+    padding: 0px 20% 0px 5%;
 
     font-weight: 600;
     font-size: 1.3rem;
@@ -355,14 +355,12 @@ body {
 }
 
 .form {
-    padding: 20px 10% 40px;
+    padding: 20px 5% 40px;
     /* border: 1px solid CanvasText; */
     box-shadow: 0 10px 10px rgb(0 0 0 / 0.1);
 
     background-color: white;
 }
-
-
 
 form {
     width: 800px;
@@ -372,6 +370,12 @@ form {
     flex-wrap: wrap;
 
     gap: 20px;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
 }
 
 form div {
@@ -391,16 +395,13 @@ input {
     border-radius: 5px;
 }
 
-button {
-    background-color: #596D48;
-    color: White;
-    border: none;
-    padding: 2px 30px;
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.1);
+}
 
-    width: 200px;
-    height: 40px;
-
-    border-radius: 10px;
+input:invalid {
+    outline: 1px solid red;
 }
 
 .login a {
@@ -410,5 +411,26 @@ button {
 }
 
 .bottom {
-    padding: 0 10%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    background-color: #596D48;
+    color: White;
+    border: none;
+    padding: 5px 30px;
+
+    width: 250px;
+    height: 50px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
 }
